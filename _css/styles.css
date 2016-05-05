@@ -1,0 +1,87 @@
+ .about_TBBT {	display: inline-block;
+	max-width: 100%;
+	border: 0px solid green;
+	width:440px;
+	text-align: center;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 1;
+	color: #ffffff;
+	left: 150px;
+	top: 375px;
+	}
+
+p{	z-index: 1;
+	position: absolute;
+	top:550px;
+	left:0px;
+	color:#FFFFFF;
+	padding-left: 12%;
+	padding-right: 12%;
+	}
+
+body{background-color: #000000}
+
+h1 .title{ 
+	}
+
+
+
+h1{	left:100px;
+	max-width: 100%;
+	font-size: 72px;
+	color: #FFFFFF;
+	text-align: center;
+	font-family: sans-serif;
+	
+	border-width:1px;
+	margin: 0px;
+	padding: 0px}
+
+
+
+
+h3{}
+
+nav{border: 0px solid green;
+	border-width:0px;
+	list-style:none;
+	margin: 0px;
+	padding: 0px;
+	text-align: right;
+	background-color: #000000;
+	}
+
+nav li {text-align: right;
+		display:inline-block;}
+
+nav a{	display: inline-block;
+		padding:0px;
+		margin: 0px;
+		font-family: sans-serif;
+		text-decoration: none;
+		color: green;
+		padding-left: 20px;
+		padding-right: 20px;}
+	
+ul{		list-style:none;
+		}
+
+#container img { 	position: absolute;
+					left:0px;}
+
+ #container{		position:relative;
+					background-color: #000000;
+					max-width:987px;
+					width:100%;
+
+					margin:auto;}
+img{z-index: 0;
+	position: absolute; 
+	max-width: 100%;
+	height: auto;}
+
+ .bg{background-color: #000000;}
+
+}
