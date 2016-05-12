@@ -12,8 +12,7 @@
 				top:550px;
 				color:#FFFFFF;
 				padding-left: 12%;
-				padding-right: 12%;
-				}
+				padding-right: 12%;}
 
 p{	}
 
@@ -21,7 +20,21 @@ body{background-color: #000000}
 
 
 
-.title{}
+.title{		z-index: 1;
+		 	display: inline-block;
+			max-width: 100%;
+			border: 0px solid green;
+			width: 50%;				
+			text-align: center;
+			margin-left: auto;
+			margin-right: auto;
+			z-index: 1;
+			color: #ffffff;				
+			position: absolute;
+							
+			color:#FFFFFF;
+			padding-left: 12%;
+			padding-right: 12%;}
 
 
 
@@ -46,8 +59,7 @@ nav{border: 0px solid green;
 	margin: 0px;
 	padding: 0px;
 	text-align: right;
-	background-color: #000000;
-	}
+	background-color: #000000;}
 
 nav li {text-align: right;
 		display:inline-block;}
@@ -61,8 +73,7 @@ nav a{	display: inline-block;
 		padding-left: 20px;
 		padding-right: 20px;}
 	
-ul{		list-style:none;
-		}
+ul{		list-style:none;}
 
 #container img { 	position: absolute;
 					left:0px;}
@@ -76,192 +87,44 @@ ul{		list-style:none;
 
 
 
-img{z-index: 0;
+img{z-index:-1;
 	position: absolute; 
 	max-width: 100%;
 	height: auto;}
 
+._beer{ max-width: 99%;
+        min-width: 10%;
+        border: solid green 8px;
+        border-radius:50px;
+        position: absolute;
+        top: 335px;
+        right: 0;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #ffffff;}
+
+._spoon{padding-left: 12px;
+        padding-right: 12px;
+        height: 142px;
+        background-color: #FFFFFF;
+        max-width: 99%;
+        min-width: 10%;
+        border: solid green 8px;
+        border-radius:50px;
+        position: absolute;
+        top: 335px;
+        right: 425px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        }
+
  .bg{background-color: #000000;}
 
-}
+
+footer {background-color: gray;
+		
 
 
-
-/* jQueary plug in script*/
-
-@import url(http://fonts.googleapis.com/css?family=Bree+Serif);
-.ac-overlay{
-    box-sizing: border-box;
-    height:100%;
-    width:100%;
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: rgba(0,0,0,0.8);
-    z-index: 99998;
-    opacity:0;
-	cursor: wait;
-}
-.ac-container {
-
-    box-sizing: border-box;
-    font-family: 'Bree Serif', serif; 
-    width: 360px;
-    position: absolute;
-    margin-left: auto;
-	margin-right: auto;
-
-    padding: 20px 20px 30px 20px;
-    background: #fff;
-    z-index: 99999;
-    opacity:0;
-    text-align:center;
-    border-radius: 4px;
-    box-shadow:0px 0px 5px #000;
-    font-weight:normal;
-}
-.ac-container h2 {
-    box-sizing: border-box;
-    margin:0 0 14px 0;
-    font-size:26px;
-    border-bottom:1px dashed #ccc;
-    padding-bottom:11px;
-}
-.ac-container h3 {
-    box-sizing: border-box;
-    color:#649D09;
-    margin-bottom:5px;
-    margin-top:15px;
-    font-size:26px;
-}
-.ac-container p {
-    box-sizing: border-box;
-    margin:0 0 20px 0;
-    font-size: 14px;
-    color:#959595;
-    line-height: 20px;
-}
-.ac-container p strong {
-    color:#FF1F1F;
-}
-.ac-container select, 
-.ac-container input {
-    box-sizing: border-box;
-    color:#555;
-    padding: 5px 10px;
-    font-size: 12px;
-    line-height: 1.5;
-    border-radius: 3px;
-    margin-right:5px;
-    border:1px solid #ccc;
-}
-.ac-container input.day{
-    box-sizing: border-box;
-    width:45px;
-    height:28px;
-}
-.ac-container input.year{
-    box-sizing: border-box;
-    width:70px;
-    height: 28px;
-}
-.ac-container select {
-    box-sizing: border-box;
-    height:28px;
-    padding-left:4px;
-}
-.ac-container button {
-    box-sizing: border-box;
-    display: inline-block;
-    margin-bottom: 0;
-    font-weight: bold;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    -ms-touch-action: manipulation;
-    touch-action: manipulation;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    background-image: none;
-    border: 1px solid transparent;
-    border-radius: 4px;
-    padding: 4px 10px 4px 10px;
-    font-size: 12px;
-    line-height: 1.5;
-    width: 84px;
-    background:#8EB908;
-    color:#fff; 
-    text-shadow:1px 1px 0 #84A51D;
- 
-}
-.ac-container button:hover{
-    box-sizing: border-box;
-    background:#82A711;
-}
-.ac-container .errors  {
-    box-sizing: border-box;
-    margin:0 0 20px 0;
-    font-size: 12px;
-    line-height: 18px;
-    color:#FF1F1F;
-}
-.ac-container .errors ul,
-.ac-container .errors li{
-    box-sizing: border-box;
-    padding:0 0 3px 0;
-    margin:0 0 0 0;
-    list-style:none;
-}
-.ac-container .errors li span {
-    box-sizing: border-box;
-    font-size:9px;
-    background:#ebebeb; 
-    border:1px solid #ccc;
-    width: 14px;
-    height:14px;
-    border-radius:7px;
-    display:inline-block;
-    color:#FF1F1F;
-    font-weight: bold;
-    text-align: center;
-    margin-right:5px;
-    line-height: 13px;
-    position:relative;
-    top:-2px;
-    text-shadow: 1px 1px 0 #fff;
-    font-family:arial;
-}
-.ac-container .fields {
-    box-sizing: border-box;
-    clear:both;
-    margin:10px 0 10px 0;
-}             
-@media (max-width: 500px) {
-    .ac-container {
-        box-sizing: border-box;
-        width:auto;
-        margin-right:20px;
-        margin-left:1px;
-    }
-    .ac-container select, 
-    .ac-container input.day, 
-    .ac-container input.year{
-        box-sizing: border-box;
-        display:block;
-        margin-bottom:10px;
-        margin-right:0;
-        width:100%;
-    }
-    .ac-container button {
-        box-sizing: border-box;
-        display: block;
-        width: 100%;
-    }
-}
-
-/* end of jQ Script*/
+		}
